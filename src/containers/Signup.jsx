@@ -1,5 +1,6 @@
-import { useState } from "react";
-import FormInput from "../formInput.css";
+import   {
+  useState }  from "react";
+import FormInput from "./FormInput";
 
 
 
@@ -61,6 +62,7 @@ const Signup = () => {
       label: "confirm Password",
       pattern: values.password,
       required: true,
+      
     },
   
   ];
@@ -106,7 +108,7 @@ const Signup = () => {
     <div className="App">
     
       <form onSubmit={handleSubmit}>
-        <h1>Create Account</h1>
+        <h1 >Create Account</h1>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -116,13 +118,13 @@ const Signup = () => {
            
           />
         ))}
-        <button disabled={isLoading}>{isLoading ? 'Loading...' : 'Signup'}</button>
         <p1 className="mt-3">Already have an account?<a href="/Login">Login</a></p1>
         
         <div className='buttons'>
         <a href="/signup" className="btn btn-outline-dark">
-        <i className="fa-arrow-circle-left  me-1"></i></a> 
+        <i className="fa-arrow-circle-left  me-1">Back</i></a> 
         </div>
+        <button disabled={isLoading}>{isLoading ? 'Loading...' : 'Signup'}</button>
    
       </form>
       {status === 'Success' && <div>{resp}</div>}

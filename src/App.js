@@ -6,6 +6,8 @@ import "./App.css";
 import ProductDetails from "./containers/ProductDetails";
 import Navbar from "./containers/Navbar";
 import Signup from "./containers/Signup";
+import Login from "./containers/Login";
+
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/" exact component={ProductListing} />
           <Route path="/product/:productId" component={ProductDetails} />
           <Route path="/signup" component={Signup} />
+          <Route path="/Login" component={Login} />
+
           <Route>404 Not Found!</Route>
         </Switch>
       </Router>
