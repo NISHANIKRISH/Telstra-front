@@ -12,7 +12,7 @@ const ProductPage = () => {
 // eslint-disable-next-line
   const fetchProducts = useCallback (async () => {
     const response = await axios
-      .get("http://localhost:5000/products")
+      .get("http://localhost:5000/Phone")
       .catch((err) => {
         console.log("Err: ", err);
         });
