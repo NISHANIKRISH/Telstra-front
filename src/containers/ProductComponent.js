@@ -8,7 +8,6 @@ const ProductsList = () => {
   const renderList = products.map(function c(product) {
     const { p_id, brand, name, image, price } = product;
     return (
-
       <div className="four wide column" key={p_id}>
         <Link to={`/products/${p_id}`}>
           <div className="ui link cards">
