@@ -34,9 +34,8 @@ const ProductDetails = () => {
       {Object.keys(selected_products).length === 0 ? (
         <div>...Loading</div>
       ) : (
-        <div className="ui placeholder segment" key={p_id}>
           <div className="ui two column stackable center aligned grid">
-            <div className="ui vertical divider">AND</div>
+            <div className="ui vertical divider"></div>
             <div className="middle aligned row">
               <div className="column lp">
                 <img className="ui fluid image" src={image} alt="img" />
@@ -57,7 +56,6 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-        </div>
       )}
     </div>
   );
