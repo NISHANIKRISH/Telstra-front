@@ -12,13 +12,13 @@ const SearchProducts = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.get(`/search?q=${searchQuery}`);
+      const response = await axios.get(`http://localhost:5000/search?q=${searchQuery}`);
       setProducts(response.data.products);
     } catch (error) {
       console.log('Error:', error);
     }
   };
-
+  console.log(products)
   return (
     <div>
       <form onSubmit={handleSubmit}>

@@ -12,7 +12,7 @@ const ProductPage = () => {
 // eslint-disable-next-line
   const fetchProducts = useCallback (async () => {
     const response = await axios
-      .get("http://localhost:5000/Phone")
+      .get("http://localhost:5000/all_products")
       .catch((err) => {
         console.log("Err: ", err);
         });
@@ -21,7 +21,7 @@ const ProductPage = () => {
  
   useEffect(() => {
     fetchProducts();
-  }, []);
+  });
   
 
   console.log("Products :", products);

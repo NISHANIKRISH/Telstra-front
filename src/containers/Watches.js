@@ -25,7 +25,7 @@ const ProductsList = () => {
     fetchProducts();
   });
 
-  const iphones = products.filter((product) => product.category === "Phone");
+  const iphones = products.filter((product) => product.category === "Watch");
 
   const renderList = iphones.map((product) => {
     const { p_id, brand, name, image, price } = product;

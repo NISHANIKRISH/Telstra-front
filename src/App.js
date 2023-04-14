@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ProductListing from "./containers/ProductListing";
+// import ProductListing from "./containers/ProductListing";
 import "./App.css";
 import ProductDetails from "./containers/ProductDetails";
 import Navbar from "./containers/Navbar";
@@ -9,6 +9,10 @@ import Login from "./containers/Login";
 import Home from "./containers/Home";
 import Catalog from "./containers/Catalog";
 import Footer from "./containers/Footer"
+import ProductComponent from "./containers/ProductComponent"
+import Watches from "./containers/Watches"
+import Headsets from "./containers/Headsets"
+
 
 
 function App() {
@@ -20,8 +24,11 @@ function App() {
       <Navbar/>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/products" exact component={ProductListing} />
+          {/* <Route path="/phones" exact component={ProductListing} /> */}
           <Route path="/catalog" exact component={Catalog} />
+          <Route path="/phones" exact component={ProductComponent} />
+          <Route path="/watch" exact component={Watches} />
+          <Route path="/headsets" exact component={Headsets} />
 
           <Route path="/footer" exact component={Footer} />
 

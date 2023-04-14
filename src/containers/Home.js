@@ -23,7 +23,7 @@ function Home() {
                 <div className='card__body'>
                     <img src={phone} alt='img' style={{paddingTop:'25px',paddingBottom:'35px'}}/>
                     <h2 className='card__title' style={{marginbottom: '40px'}}>PHONES</h2>
-                    <button className='card__btn' style={{ width:'95px',height:'35px',backgroundColor:'black',marginleft: '-115px'}}><a href='/Catalog' style={{color:'white'}}>View</a></button>
+                    <button className='card__btn' style={{ width:'95px',height:'35px',backgroundColor:'black',marginleft: '-115px'}}><a href='/phones' style={{color:'white'}}>View</a></button>
 
                 </div>
                 </div>
@@ -32,7 +32,7 @@ function Home() {
                 <div className='card__body'>
                     <img src={watch} alt='' style={{paddingBottom:'20px'}}/>
                     <h2 className='card__title'>SMARTWATCH</h2>
-                    <button className='card__btn' style={{ width:'100px',height:'35px',backgroundColor:'black',color:'white'}}>View</button>
+                    <button className='card__btn' style={{ width:'100px',height:'35px',backgroundColor:'black',color:'white'}}><a href='/watch' style={{color:'white'}}>View</a></button>
 
                 </div>
                 </div>
@@ -42,7 +42,7 @@ function Home() {
                 <div className='card__body'>
                     <img src={headphone} alt='' style={{paddingTop:'20px'}} />
                     <h2 className='card__title' style={{paddingTop:'20px'}}>HEADSETS</h2>
-                    <button className='card__btn' style={{ width:'100px',height:'35px',backgroundColor:'black',color:'white'}}>View</button>
+                    <button className='card__btn' style={{ width:'100px',height:'35px',backgroundColor:'black',color:'white'}}><a href='/headsets' style={{color:'white'}}>View</a></button>
 
                 </div>
             </div>

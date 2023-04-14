@@ -13,7 +13,7 @@ const ProductDetails = () => {
   
   const selected_products = useSelector((state) => state.product);
   const firstproduct = selected_products[0];
-  const { brand, category, description, image, name, p_id, price} = firstproduct || { };
+  const { category, description, image, name, price} = firstproduct || { };
   const dispatch = useDispatch();
   
   const fetchProductDetail = async (productId) => {
