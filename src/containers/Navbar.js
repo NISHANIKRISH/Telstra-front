@@ -1,12 +1,16 @@
 import React from 'react'
 import Search from './Search'
+import logo from '../Assets/logo.png'
 
 const Navbar = () => {
   return (
     
    <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
-  <a className="navbar-brand fw-bold fs-4" href="navbar">Telstronics</a>
+  <div >
+  <img src={logo} alt="logo.png"/>
+  </div>
+    <a className="navbar-brand fw-bold fs-4" href="navbar">Telstronics</a>
   <form className="d-flex ms-1">
 <Search></Search>
     
