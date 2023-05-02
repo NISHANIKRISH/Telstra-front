@@ -53,9 +53,11 @@ const Login = () => {
       .catch((error) => {
         console.log(error);
         console.log(error.response.data.message);
+        
         setStatus("error");
         setError(error.response.data.message);
         setIsLoading(false);
+        throw (e.response?.data?.message || 'Unknown error');
       });
     console.log(resp);
   };

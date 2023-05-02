@@ -116,10 +116,11 @@ body{
   align-items: flex-end;
 }
 button{
-  background-color: #ebebeb;
+  background-color: #ffffff;
   float: right;
   width: 3px;
   height: 80px;
+
   padding-inline: 30px;
   
 }

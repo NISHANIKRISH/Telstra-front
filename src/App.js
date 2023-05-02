@@ -9,7 +9,8 @@ import Navbar from "./containers/Navbar";
 import Signup from "./containers/Signup";
 import Login from "./containers/Login";
 import Home from "./containers/Home";
-
+import SearchResults from './containers/SearchResults';
+import Reviews from './containers/Review'
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,8 @@ function App() {
         <Route path="/phones" exact component={ProductListing_Phones} />
         <Route path="/watches" exact component={ProductListing_Watches} />
         <Route path="/headsets" exact component={ProductListing_Headsets} />
+        <Route path="/search-results" component={SearchResults} />
+        <Route path="/products/:productId/reviews" component={Reviews} />
           
           <Route path="/signup" component={Signup} />
           <Route path="/Login" component={Login} />

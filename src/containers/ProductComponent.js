@@ -2,7 +2,6 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-
 const ProductsList = () => {
   const products = useSelector((state) => state.allProducts.products);
   const renderList = products.map(function c(product) {
@@ -16,6 +15,8 @@ const ProductsList = () => {
               <div className="image">
                 <img src={image} alt={name} />
               </div>
+
+              
               <div className="content">
                 <div className="header">{name}</div>
                 <div className="meta price">{price}</div>
